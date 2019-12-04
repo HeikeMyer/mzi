@@ -159,7 +159,7 @@ def hmac_md5(key, message):
 
 # hmac(text,K)=H((K0^oblock)||H((K0^iblock)||text))
 if __name__ == "__main__":
-    print('hello')
+    #print('hello')
     k = "123123"
 
     if len(sys.argv) < 2:
@@ -167,7 +167,7 @@ if __name__ == "__main__":
 
     file_in = sys.argv[1]
     file_out = sys.argv[2]
-    print(file_in, file_out)
+    #print(file_in, file_out)
     with open(file_in, "r+") as f:
         m = f.read()
 
@@ -181,4 +181,4 @@ if __name__ == "__main__":
     with open(file_out, "w+") as f:
         f.write(h_key)
 
-    print('end')
+    #print('end')
